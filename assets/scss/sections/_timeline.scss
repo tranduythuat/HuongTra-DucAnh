@@ -1,0 +1,128 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.timeline {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 500 / 700;
+        background: url('../../assets/images/timeline_bg.png') no-repeat center / 98%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: $font-GothamBook;
+        color: $text-color;
+        margin-top: 20%;
+    }
+
+    .title {
+        margin-top: 34%;
+
+        margin-bottom: 10%;
+        font-size: 45px;
+        color: #5e0d10;
+        font-family: "UVN Buc Thu", sans-serif;
+    }
+
+    .timeline-items {
+        width: 100%;
+        max-width: 488px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 9%;
+
+        .item {
+            @include flex-center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 6%;
+
+            .icon {
+                max-width: 27px;
+                width: 100%;
+                margin-bottom: .5%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .text-box {
+                p {
+                    font-family: $font-GothamBook;
+                    text-transform: uppercase;
+                    margin-bottom: 3%;
+                    font-size: 12px;
+                    line-height: 1;
+                }
+
+                p.time-and-title {
+                    span {
+                        font-family: $font-gothamBold;
+                    }
+                }
+            }
+        }
+
+        .item:nth-child(2) {
+            .icon {
+                max-width: 32px;
+            }
+        }
+
+        .item:nth-child(4) {
+            .icon {
+                max-width: 20px;
+            }
+        }
+
+        .item:nth-child(5) {
+            .icon {
+                max-width: 22px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .title {
+            font-size: calc((45 / 500) * 100vw);
+        }
+
+        .timeline-items {
+            .item {
+                .icon {
+                    max-width: calc((27 / 500) * 100vw);
+                }
+
+                .text-box {
+                    p {
+                        font-size: calc((12 / 500) * 100vw);
+                    }
+                }
+            }
+
+            .item:nth-child(2) {
+                .icon {
+                    max-width: calc((30 / 500) * 100vw);
+                }
+            }
+
+            .item:nth-child(4) {
+                .icon {
+                    max-width: calc((20 / 500) * 100vw);
+                }
+            }
+
+            .item:nth-child(5) {
+                .icon {
+                    max-width: calc((22 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

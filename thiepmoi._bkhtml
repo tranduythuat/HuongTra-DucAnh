@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minh & Phương</title>
+  
+    <meta property="og:image" content="https://i.postimg.cc/3rzFTD5L/TT1-4689-(1).jpg" />
+    <meta property="og:image:width" content="600" /> 
+    <meta property="og:image:height" content="400" /> 
+  
+    <meta property="og:title" content="Phước Minh & Nam Phương" />
+    <meta property="og:description" content="26.06.2026" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="letter-section">
+      <div class="content flip-vertical-left" id="letter">
+        <div class="couple-names">
+          <img src="assets/images/couple_name_letter.png" alt="">
+        </div>
+        <div class="subtext">
+            <div class="icon">
+                <img src="assets/images/icons/arrow.png" alt="">
+            </div>
+            <div class="text">
+                In celebration of love, <br>
+                we hope you will join us <br>
+                in celebrating our wedding
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="en btn" id="btn-en">English</button>
+            <button class="vi btn" id="btn-vi">Tiếng Việt</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("btn-en").addEventListener("click", () => {
+      window.location.href = "invitation.html";
+    });
+    document.getElementById("btn-vi").addEventListener("click", () => {
+      window.location.href = "invitationvi.html";
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/gsap-animations.js"></script>
+  <script src="assets/js/letter.js"></script>
+</html>

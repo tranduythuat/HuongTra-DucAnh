@@ -1,0 +1,102 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.letter-section {
+    width: 100%;
+    max-width: 500px;
+
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 891;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/minh-phuong/letter.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $primary-color;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.439);
+        position: relative;
+        cursor: pointer;
+        perspective: 1000px;
+        padding-bottom: 23%;
+
+        .couple-name {
+            font-size: 76px;
+            font-family: $font-UVN-Buc-Thu;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 15%;
+        }
+
+        .subtext {
+            font-family: $font-GothamBook;
+            font-size: 11px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .arrow {
+            width: 25px;
+            height: auto;
+            display: block;
+            animation: arrowPulse 1.5s ease-in-out infinite;
+            transform-origin: center;
+            margin: 2%;
+        }
+
+        .open-card {
+            display: block;
+            text-decoration: none;
+            color: $title-color;
+            font-family: $font-GothamBook;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            background-color: #eae0cf;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            padding: 1%;
+            border-radius: 12px;
+            margin-top: 5%;
+        }
+    }
+
+    @keyframes arrowPulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.12);
+            opacity: 0.9;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .couple-name {
+                font-size: calc((76 / 500) * 100vw);
+            }
+
+            .subtext {
+                font-size: calc((11 / 500) * 100vw);
+            }
+
+            .arrow {
+                width: calc((25 / 500) * 100vw);
+            }
+
+            .open-card {
+                max-width: calc((150 / 500) * 100vw);
+                font-size: calc((11 / 500) * 100vw);
+            }
+        }
+    }
+}
