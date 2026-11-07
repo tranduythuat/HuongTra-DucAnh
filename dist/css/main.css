@@ -594,6 +594,16 @@ header {
   .couple-block .content .main-img .text-block .date {
     font-size: 2vw;
   }
+  .couple-block .couple-img {
+    max-width: 43.2vw;
+    border: 1.6vw solid #eae0cf;
+  }
+  .couple-block .text-block .couple-name {
+    font-size: 2vw;
+  }
+  .couple-block .text-block .date {
+    font-size: 2vw;
+  }
 }
 
 .timeline {
@@ -857,6 +867,9 @@ header {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .our-story .content .title {
+    font-size: 11.6vw;
+  }
   .our-story .content .quote-text {
     font-size: 4.4vw;
   }
@@ -917,8 +930,8 @@ header {
   display: inline-block;
 }
 @media (max-width: 500px) {
-  .album .content h2 {
-    font-size: 9vw;
+  .album .content .title {
+    font-size: 11.6vw;
   }
   .album .content .swiper .swiper-button-next:after,
   .album .content .swiper .swiper-button-prev:after {

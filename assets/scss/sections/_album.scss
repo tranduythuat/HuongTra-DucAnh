@@ -48,8 +48,8 @@
     @media (max-width: 500px) {
         .content {
 
-            h2 {
-                font-size: calc((45 / 500) * 100vw);
+            .title {
+                font-size: calc((58 / 500) * 100vw);
             }
 
             .swiper {

@@ -80,5 +80,20 @@
                 }
             }
         }
+
+        .couple-img {
+            max-width: calc((216 / 500) * 100vw);
+            border: calc((8 / 500) * 100vw) solid #eae0cf;
+        }
+
+        .text-block {
+            .couple-name {
+                font-size: calc((10 / 500) * 100vw);
+            }
+
+            .date {
+                font-size: calc((10 / 500) * 100vw);
+            }
+        }
     }
 }
