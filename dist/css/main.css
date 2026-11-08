@@ -396,9 +396,10 @@ header {
   perspective: 1000px;
 }
 .hero .content .main-text {
-  font-size: 70px;
+  font-size: 44px;
+  text-transform: uppercase;
   font-weight: 400;
-  font-family: "MTD Doppelganger", sans-serif;
+  font-family: "1FTV-Blushing-Rose", sans-serif;
 }
 .hero .content .divider {
   margin: 1% 0 5%;
@@ -421,7 +422,7 @@ header {
 }
 @media (max-width: 500px) {
   .hero .content .main-text {
-    font-size: 14vw;
+    font-size: 8.8vw;
   }
   .hero .content .divider img {
     max-width: 2.4vw;
@@ -487,7 +488,7 @@ header {
   line-height: 1.5;
 }
 .invite .content .location-block .address span {
-  font-size: 14px;
+  font-size: 17px;
   font-family: "SVN-GothamBook", sans-serif;
   font-style: normal;
   color: #5e0d10;
@@ -533,7 +534,7 @@ header {
     font-size: 2vw;
   }
   .invite .content .location-block .address span {
-    font-size: 2.8vw;
+    font-size: 3.4vw;
   }
   .invite .content .location-block .btn-wrap .map-btn {
     font-size: 2.4vw;

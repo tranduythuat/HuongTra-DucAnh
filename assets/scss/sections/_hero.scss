@@ -20,11 +20,12 @@
         perspective: 1000px;
 
         .main-text {
-            font-size: 70px;
+            font-size: 44px;
             // letter-spacing: 4px;
-            // text-transform: uppercase;
+            text-transform: uppercase;
             font-weight: 400;
-            font-family: $font-MTD-Doppelganger;
+            // font-family: $font-MTD-Doppelganger;
+            font-family: $font-1FTV-Blushing-Rose;
         }
 
         .divider {
@@ -54,7 +55,7 @@
     @media (max-width: 500px) {
         .content {
             .main-text {
-                font-size: calc((70 / 500) * 100vw);
+                font-size: calc((44 / 500) * 100vw);
             }
 
             .divider {
