@@ -118,18 +118,25 @@
                 }
             }
 
-            .link-box {
+            .qr-box {
                 .description {
-                    font-size: calc((10.6 / 500) * 100vw);
+                    font-size: calc((11 / 500) * 100vw);
+                }
+
+                .qr-btn {
+                    .action-btn {
+                        font-size: calc((10.6 / 500) * 100vw);
+                    }
                 }
             }
 
-            .btn-box {
-                .action-btn {
-                    font-size: calc((10.6 / 500) * 100vw);
-                }
+            .thank-text {
+                font-size: calc((12 / 500) * 100vw);
             }
 
+            .text-end {
+                font-size: calc((32 / 500) * 100vw);
+            }
         }
     }
 }

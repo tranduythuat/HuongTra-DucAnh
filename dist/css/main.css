@@ -1254,11 +1254,17 @@ header {
   .button-links .content .divider-line img {
     max-width: 34.8vw;
   }
-  .button-links .content .link-box .description {
+  .button-links .content .qr-box .description {
+    font-size: 2.2vw;
+  }
+  .button-links .content .qr-box .qr-btn .action-btn {
     font-size: 2.12vw;
   }
-  .button-links .content .btn-box .action-btn {
-    font-size: 2.12vw;
+  .button-links .content .thank-text {
+    font-size: 2.4vw;
+  }
+  .button-links .content .text-end {
+    font-size: 6.4vw;
   }
 }
 
