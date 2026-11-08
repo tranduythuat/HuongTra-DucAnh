@@ -476,11 +476,7 @@ header {
   font-size: 58px;
   font-family: "UVN Buc Thu", sans-serif;
   font-weight: 300;
-  line-height: 1;
-}
-.invite .content .location-block .name span {
-  font-size: 14px;
-  font-family: "SVN-GothamBook", sans-serif;
+  line-height: 1.2;
 }
 .invite .content .location-block .address {
   font-size: 10px;
@@ -488,6 +484,13 @@ header {
   font-family: "SVN-GothamBook", sans-serif;
   font-style: italic;
   margin-top: 1%;
+  line-height: 1.5;
+}
+.invite .content .location-block .address span {
+  font-size: 14px;
+  font-family: "SVN-GothamBook", sans-serif;
+  font-style: normal;
+  color: #5e0d10;
 }
 .invite .content .location-block .btn-wrap {
   margin-top: 4%;
@@ -528,6 +531,9 @@ header {
   }
   .invite .content .location-block .address {
     font-size: 2vw;
+  }
+  .invite .content .location-block .address span {
+    font-size: 2.8vw;
   }
   .invite .content .location-block .btn-wrap .map-btn {
     font-size: 2.4vw;

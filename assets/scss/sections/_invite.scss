@@ -57,12 +57,7 @@
                 font-size: 58px;
                 font-family: $font-UVN-Buc-Thu;
                 font-weight: 300;
-                line-height: 1;
-
-                span {
-                    font-size: 14px;
-                    font-family: $font-GothamBook;
-                }
+                line-height: 1.2;
             }
 
             .address {
@@ -71,6 +66,14 @@
                 font-family: $font-GothamBook;
                 font-style: italic;
                 margin-top: 1%;
+                line-height: 1.5;
+
+                span {
+                    font-size: 14px;
+                    font-family: $font-GothamBook;
+                    font-style: normal;
+                    color: $title-color;
+                }
             }
 
             .btn-wrap {
@@ -127,6 +130,10 @@
 
                 .address {
                     font-size: calc((10 / 500) * 100vw);
+
+                    span {
+                        font-size: calc((14 / 500) * 100vw);
+                    }
                 }
 
                 .btn-wrap {
