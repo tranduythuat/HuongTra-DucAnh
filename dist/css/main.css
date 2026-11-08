@@ -132,7 +132,7 @@ section {
   position: absolute;
   right: 30%;
   max-width: 300px;
-  width: 190%;
+  width: 198%;
   height: 100%;
   overflow: hidden;
 }
@@ -385,7 +385,7 @@ header {
 }
 .hero .content {
   aspect-ratio: 500/747;
-  background: linear-gradient(to bottom, rgba(234, 224, 207, 0), rgba(234, 224, 207, 0.181), #eae0cf), url("../../assets/images/couple_resize/hero.webp") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(234, 224, 207, 0), rgba(234, 224, 207, 0.181), #eae0cf), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HuongTra-DucAnh/couple_resize/hero.webp") no-repeat center/cover;
   width: 100%;
   height: 100%;
   display: flex;
@@ -396,7 +396,8 @@ header {
   perspective: 1000px;
 }
 .hero .content .main-text {
-  font-size: 104px;
+  font-size: 70px;
+  font-weight: 400;
   font-family: "MTD Doppelganger", sans-serif;
 }
 .hero .content .divider {
@@ -420,7 +421,7 @@ header {
 }
 @media (max-width: 500px) {
   .hero .content .main-text {
-    font-size: 20.8vw;
+    font-size: 14vw;
   }
   .hero .content .divider img {
     max-width: 2.4vw;
@@ -475,7 +476,11 @@ header {
   font-size: 58px;
   font-family: "UVN Buc Thu", sans-serif;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1;
+}
+.invite .content .location-block .name span {
+  font-size: 14px;
+  font-family: "SVN-GothamBook", sans-serif;
 }
 .invite .content .location-block .address {
   font-size: 10px;
@@ -500,6 +505,7 @@ header {
   padding: 1% 0;
   background-color: #5e0d10;
   border-radius: 15px;
+  text-transform: uppercase;
 }
 @media (max-width: 500px) {
   .invite .content .ivitation-img {
@@ -548,7 +554,7 @@ header {
   aspect-ratio: 500/300;
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/couple_resize/couple_01_bg.webp");
+  background-image: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HuongTra-DucAnh/couple_resize/couple_01_bg.webp");
   background-size: contain;
   background-position: top;
   filter: blur(8px);
@@ -556,7 +562,7 @@ header {
   z-index: 0;
 }
 .couple-block .couple-img {
-  background: url("../../assets/images/couple_resize/couple_01.webp") no-repeat 12% 50%/120%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HuongTra-DucAnh/couple_resize/couple_01.webp") no-repeat 12% 50%/120%;
   max-width: 216px;
   width: 100%;
   aspect-ratio: 5/6;
@@ -1175,7 +1181,7 @@ header {
   width: 100%;
   height: 100%;
   aspect-ratio: 500/800;
-  background: url("../../assets/images/couple_resize/couple_02.webp") no-repeat center/cover;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/HuongTra-DucAnh/couple_resize/couple_02.webp") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;

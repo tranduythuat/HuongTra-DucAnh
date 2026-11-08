@@ -646,7 +646,7 @@
        RSVP
     ====================================================== */
 
-  async function handleFormSubmit(e, lang = "vi", sheet = "nha-trai") {
+  async function handleFormSubmit(e, lang = "vi", sheet = "confirm") {
     e.preventDefault();
 
     // Prevent duplicate submit
@@ -708,6 +708,7 @@
       name,
       confirm,
       guest_number,
+      relation,
       wish,
     } = data;
 
@@ -724,14 +725,14 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = `?sheet=${sheet}`;
+    const sheetURL = `https://script.google.com/macros/s/AKfycbyxR0j7zdnRb8V0ZWroIhyEiNJwF9KnD1r4htSXPEAy5ljFUPTWKvn7oYKmeJNPjMp6KQ/exec?sheet=${sheet}`;
 
     const controller = new AbortController();
 
     const timeout = setTimeout(() => { controller.abort(); }, 15000);
 
     try {
-      const body = new URLSearchParams({ name, confirm, guest_number, wish, });
+      const body = new URLSearchParams({ name, confirm, guest_number, relation, wish, });
       const res = await fetch(sheetURL, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", },
@@ -796,13 +797,13 @@
 
   function initRSVP() {
     const form = document.forms["rsvpForm"];
-    const formNhaTrai = document.forms["rsvpFormNhaTrai"];
+    // const formNhaTrai = document.forms["rsvpFormNhaTrai"];
     if (form) {
-      form.addEventListener("submit", (e) => handleFormSubmit(e, "vi", "nha-gai"));
+      form.addEventListener("submit", (e) => handleFormSubmit(e, "vi", "confirm"));
     }
-    if (formNhaTrai) {
-      formNhaTrai.addEventListener("submit", (e) => handleFormSubmit(e, "vi", "nha-trai"));
-    }
+    // if (formNhaTrai) {
+    //   formNhaTrai.addEventListener("submit", (e) => handleFormSubmit(e, "vi", "nha-trai"));
+    // }
   }
 
   function initAnimations() {
