@@ -193,6 +193,30 @@
     });
   }
 
+  function initQrModal() {
+    const trigger = qs(".action-btn");
+    if (!trigger || typeof Swal === "undefined") return;
+
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const qrImageUrl = trigger.dataset.qrUrl || "assets/images/qrcode.jpg";
+
+      Swal.fire({
+        title: "",
+        html: `<img src="${qrImageUrl}" alt="QR quà cưới" class="qr-modal-image" />`,
+        showCloseButton: true,
+        showConfirmButton: false,
+        width: "min(90vw, 420px)",
+        padding: "1rem",
+        background: "#fff",
+        customClass: {
+          popup: "qr-modal-popup",
+        },
+      });
+    });
+  }
+
   function initMainContent() {
     if (hasInitializedMainContent) return;
     hasInitializedMainContent = true;
@@ -205,6 +229,7 @@
     initTimeline();
     // initFAQ();
     initRSVP();
+    initQrModal();
     startCountdown(new Date("2026-12-12T18:00:00"));
     ScrollTrigger.refresh();
   }

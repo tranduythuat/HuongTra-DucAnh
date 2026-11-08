@@ -13,6 +13,7 @@
         flex-direction: column;
         padding: 0;
         font-size: 10px;
+        color: #231f20;
 
         .top-img {
             width: 100%;
@@ -34,7 +35,7 @@
         }
 
         .divider-line {
-            margin: 10%;
+            margin-top: 10%;
 
             img {
                 max-width: 174px;
@@ -43,39 +44,51 @@
             }
         }
 
-        .link-box {
+        .qr-box {
             .description {
-                font-size: 10.6px;
+                font-size: 11px;
                 line-height: 1.8;
-                margin: 8% 0 4%;
+                margin: 8% 0 2%;
                 text-transform: uppercase;
                 color: $text-color;
             }
+
+            .qr-btn {
+                @include flex-center;
+                margin-bottom: 8%;
+
+                .action-btn {
+                    width: 40%;
+                    font-family: $font-GothamBook;
+                    text-decoration: none;
+                    padding: 1.5% 0 2%;
+                    background: $title-color;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    font-weight: 300;
+                    font-size: 10.6px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: background 0.3s ease;
+                    margin: 2% 0 2%;
+                    display: block;
+                }
+            }
         }
 
+        .thank-text {
+            font-size: 12px;
+            font-family: $font-GothamBook;
+            padding: 0 11%;
+            line-height: 1.5;
+        }
 
-        .btn-box {
-            @include flex-center;
-            margin-bottom: 8%;
-
-            .action-btn {
-                width: 55%;
-                font-family: $font-GothamBook;
-                text-decoration: none;
-                padding: 1.5% 0 2%;
-                background: $title-color;
-                color: white;
-                border: none;
-                border-radius: 8px;
-                font-weight: 300;
-                font-size: 10.6px;
-                cursor: pointer;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                transition: background 0.3s ease;
-                margin: 2% 0 2%;
-                display: block;
-            }
+        .text-end {
+            font-size: 32px;
+            font-family: $font-UVN-Buc-Thu;
+            margin: 5% 0 10%;
         }
 
         .bottom-img {
@@ -119,6 +132,21 @@
 
         }
     }
+}
+
+// .qr-modal-popup {
+//     border-radius: 10px !important;
+//     padding: 1.25rem !important;
+// }
+
+.qr-modal-image {
+    display: block;
+    width: min(220px, 68vw);
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .qrcode-box {
@@ -176,5 +204,15 @@ div:where(.swal2-container) img:where(.swal2-image) {
 
     div:where(.swal2-container) div:where(.swal2-actions) {
         margin: calc((20/500) * 100vw);
+    }
+
+    div:where(.swal2-container) button:where(.swal2-close) {
+        width: calc((19.2 / 500) * 100vw);
+        height: unset;
+        aspect-ratio: 1;
+    }
+
+    .qr-modal-image {
+        width: calc((220 / 500) * 100vw);
     }
 }

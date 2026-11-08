@@ -824,9 +824,6 @@ header {
   display: flex;
   gap: 1%;
 }
-.our-story .content .story-section .img-grid .img-wrapper {
-  background-color: #5e0d10;
-}
 .our-story .content .story-section .img-grid img {
   width: 100%;
   height: auto;
@@ -1172,6 +1169,7 @@ header {
   flex-direction: column;
   padding: 0;
   font-size: 10px;
+  color: #231f20;
 }
 .button-links .content .top-img {
   width: 100%;
@@ -1191,28 +1189,28 @@ header {
   transform: rotate(-6deg);
 }
 .button-links .content .divider-line {
-  margin: 10%;
+  margin-top: 10%;
 }
 .button-links .content .divider-line img {
   max-width: 174px;
   width: 100%;
   height: auto;
 }
-.button-links .content .link-box .description {
-  font-size: 10.6px;
+.button-links .content .qr-box .description {
+  font-size: 11px;
   line-height: 1.8;
-  margin: 8% 0 4%;
+  margin: 8% 0 2%;
   text-transform: uppercase;
   color: #231f20;
 }
-.button-links .content .btn-box {
+.button-links .content .qr-box .qr-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 8%;
 }
-.button-links .content .btn-box .action-btn {
-  width: 55%;
+.button-links .content .qr-box .qr-btn .action-btn {
+  width: 40%;
   font-family: "SVN-GothamBook", sans-serif;
   text-decoration: none;
   padding: 1.5% 0 2%;
@@ -1228,6 +1226,17 @@ header {
   transition: background 0.3s ease;
   margin: 2% 0 2%;
   display: block;
+}
+.button-links .content .thank-text {
+  font-size: 12px;
+  font-family: "SVN-GothamBook", sans-serif;
+  padding: 0 11%;
+  line-height: 1.5;
+}
+.button-links .content .text-end {
+  font-size: 32px;
+  font-family: "UVN Buc Thu", sans-serif;
+  margin: 5% 0 10%;
 }
 .button-links .content .bottom-img {
   width: 100%;
@@ -1251,6 +1260,16 @@ header {
   .button-links .content .btn-box .action-btn {
     font-size: 2.12vw;
   }
+}
+
+.qr-modal-image {
+  display: block;
+  width: min(220px, 68vw);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .qrcode-box {
@@ -1306,6 +1325,14 @@ div:where(.swal2-container) img:where(.swal2-image) {
   }
   div:where(.swal2-container) div:where(.swal2-actions) {
     margin: 4vw;
+  }
+  div:where(.swal2-container) button:where(.swal2-close) {
+    width: 3.84vw;
+    height: unset;
+    aspect-ratio: 1;
+  }
+  .qr-modal-image {
+    width: 44vw;
   }
 }
 .end {
